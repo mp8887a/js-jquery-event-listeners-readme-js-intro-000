@@ -11,6 +11,14 @@ function getIt(){
   });
 }
 
+function pressIt(){
+  $("input").on("keydown", function(key){
+    if (key.which === 71){
+      window.alert("G was pressed.");
+    }
+  });
+}
+
 
 $(document).ready(function(){
 
@@ -18,4 +26,5 @@ $(document).ready(function(){
 // call functions here
 getIt();
 frameIt();
+pressIt();
 });
